@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bg"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="@dimen/activity_horizontal_margin" >
+    
+  
+
+    <com.wm.customviews.CustomTextview
+        android:id="@+id/txtGridPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="100 $"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/txtColor" >
+    </com.wm.customviews.CustomTextview>
+
+    <com.wm.customviews.CustomTextview
+        android:id="@+id/txtGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:bufferType="spannable"
+        android:singleLine="true"
+        android:text="Product name"
+        android:textColor="@color/button_states"
+        android:textSize="@dimen/my_custom_textsize" >
+    </com.wm.customviews.CustomTextview>
+    
+
+</FrameLayout>

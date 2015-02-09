@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="@dimen/activity_horizontal_margin" >
+
+  
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/app_name"
+         	android:layout_alignParentTop="true"
+         	android:layout_centerHorizontal="true"
+            android:id="@+id/imgCategoryHome"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/logo_darayab" />
+        
+         <ListView
+        android:id="@+id/grid_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:divider="#00000000"
+        android:listSelector="#00000000"
+        android:layout_below="@id/imgCategoryHome"
+        android:dividerHeight="4dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp" >
+        
+             
+        
+             
+    </ListView>
+    
+         <TextView android:layout_width="match_parent"
+             	   android:layout_height="wrap_content"
+             	   android:id="@+id/txtNoData"
+             	   android:textColor="#000"
+             	   android:text="No Products"
+             	   android:visibility="gone"
+             	   android:gravity="center"
+             	   android:layout_centerInParent="true"
+             	   android:textSize="22sp"/>
+        
+        
+        
+ </RelativeLayout>

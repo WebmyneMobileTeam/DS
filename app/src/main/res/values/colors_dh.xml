@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dh_color">#ae0101</color>
+    <color name="main_background_color">#fff</color>
+    <color name="gry">#c1c1c1</color>
+      <color name="txtColor">#4f4f4f</color>
+
+</resources>

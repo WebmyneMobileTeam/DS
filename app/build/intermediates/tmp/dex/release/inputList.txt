@@ -1,0 +1,8 @@
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\classes\release
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\release\support-annotations-20.0.0-8450e98f08896c2d293cc2c2766f88b37866c334.jar
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\release\volley-66be7a216c0b294dac7b35411a4fb27ca46826ab.jar
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\release\internal_impl-20.0.0-10a9c707c382eb2ba0ef06e480e3ea5bc03463a1.jar
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\release\gson-2.2.4-a5ca0562976100ce3a803ee73fece992ceb392e9.jar
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\release\classes-48d0714324a203928b26d433bea88898b1151449.jar
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\release\classes-169e68184d4b3a7636064d1a34e6dcbc44c01fc8.jar
+D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\release\PayPalAndroidSDK-786f5921544980dfccb6791cfa0aea6226b1204c.jar

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal" >
+
+        <com.wm.customviews.CustomTextview
+            android:id="@+id/txtReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#494949"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="Reset"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#fff"
+            />
+
+        <com.wm.customviews.CustomTextview
+            android:id="@+id/txtSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#494949"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="Send"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+         android:textColor="#fff"
+          />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Company"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="First Name*"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etFamilyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Family Name*"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:hint="Address*"
+                android:minLines="3"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="ZIP*"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Location*"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Country"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="e-mail*"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:hint="Message*"
+                android:minLines="3"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomButton
+                android:id="@+id/btnAttachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Add File"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

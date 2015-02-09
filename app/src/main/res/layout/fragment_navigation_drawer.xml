@@ -1,0 +1,10 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000"
+    android:choiceMode="singleChoice"
+    android:divider="#696969"
+    android:dividerHeight="0.5dp"
+    tools:context="com.wm.dh_activity.NavigationDrawerFragment" />
+

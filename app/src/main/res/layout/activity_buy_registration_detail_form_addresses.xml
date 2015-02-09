@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp" >
+
+        <com.wm.customviews.CustomTextview
+            android:id="@+id/step_one"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_active"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/dh_color" >
+        </View>
+
+        <com.wm.customviews.CustomTextview
+            android:id="@+id/step_two"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_active"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#c0c0c0" >
+        </View>
+
+        <com.wm.customviews.CustomTextview
+            android:id="@+id/step_three"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_passive"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:padding="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/txt_buy_registration_form_addresses_address_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:hint="Address"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gry"
+                android:textSize="@dimen/my_custom_textsize" >
+            </com.wm.customviews.CustomEdittext>
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/txt_buy_registration_form_addresses_address_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:hint="Address2"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gry"
+                android:textSize="@dimen/my_custom_textsize"
+                android:visibility="gone" >
+            </com.wm.customviews.CustomEdittext>
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/txt_buy_registration_form_addresses_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:hint="Nearest Landmark"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gry"
+                android:textSize="@dimen/my_custom_textsize"
+                android:visibility="gone" >
+            </com.wm.customviews.CustomEdittext>
+
+            <LinearLayout
+                android:id="@+id/buy_registration_form_user_info_linear_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.wm.customviews.CustomEdittext
+                    android:id="@+id/txt_buy_registration_form_addresses_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gry"
+                    android:textSize="@dimen/my_custom_textsize" >
+                </com.wm.customviews.CustomEdittext>
+
+                <com.wm.customviews.CustomEdittext
+                    android:id="@+id/txt_buy_registration_form_addresses_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gry"
+                    android:textSize="@dimen/my_custom_textsize" >
+                </com.wm.customviews.CustomEdittext>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buy_registration_form_user_info_linear_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.wm.customviews.CustomEdittext
+                    android:id="@+id/txt_buy_registration_form_addresses_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="Country"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gry"
+                    android:textSize="@dimen/my_custom_textsize" >
+                </com.wm.customviews.CustomEdittext>
+
+                <com.wm.customviews.CustomEdittext
+                    android:id="@+id/txt_buy_registration_form_addresses_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gry"
+                    android:textSize="@dimen/my_custom_textsize" >
+                </com.wm.customviews.CustomEdittext>
+            </LinearLayout>
+            <!-- layout for entering product quantity -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.wm.customviews.CustomEdittext
+                    android:id="@+id/et_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="@dimen/my_custom_textsize" />
+
+                <com.wm.customviews.CustomTextview
+                    android:id="@+id/total_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#c0c0c0"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buy_registration_form_addresses_submit_linear"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2" >
+
+                    <com.wm.customviews.CustomTextview
+                        android:id="@+id/add_new_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="Add New Address"
+                        android:textColor="@color/dh_color"
+                        android:textSize="@dimen/my_custom_textsize"
+                        android:textStyle="italic" />
+
+                    <com.wm.customviews.CustomTextview
+                        android:id="@+id/change_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Change Address"
+                        android:textColor="@color/dh_color"
+                        android:textSize="@dimen/my_custom_textsize"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+                <com.wm.customviews.CustomButton
+                    android:id="@+id/btn_buy_registration_form_addresses_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Next "
+                    android:textColor="#fff"
+                    android:textSize="@dimen/my_custom_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

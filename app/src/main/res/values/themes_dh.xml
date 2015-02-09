@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="DH" parent="@style/_DH"/>
+
+  <style name="_DH" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="android:editTextStyle">@style/EditTextDH</item>
+
+    <item name="android:textColorHighlight">#99ae0101</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewDH</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxDH</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonDH</item>
+
+    <item name="android:buttonStyle">@style/ButtonDH</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonDH</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerDH</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemDH</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarDH</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarDH</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarDH</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigDH</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallDH</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleDH</item>
+
+    <item name="android:listViewStyle">@style/ListViewDH</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewDH.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemDH</item>
+
+  </style>
+
+</resources>

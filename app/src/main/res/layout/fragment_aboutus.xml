@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+    
+    
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_darayab" />
+    
+    
+    <ScrollView android:layout_width="match_parent"
+        		android:layout_height="wrap_content">
+    
+    <com.wm.customviews.CustomTextview 
+        android:textSize="@dimen/my_custom_textsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daryab is an Iranian, family led enterprice, established in 1997.
+     Its headquater is located in the city of Esfahan in central part of Iran, about 400 km south of the Iranian capital Tehran.\n\n
+The name Daryab is a Persian name derived from the Persian adjective for comprehensible, conceptional, intellectual, etc."
+        android:gravity="center"/>
+    
+    
+    
+    </ScrollView>
+    
+ 
+
+</LinearLayout>

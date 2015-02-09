@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <com.wm.customviews.CustomEdittext
+        android:id="@+id/ededSearch"
+        style="@style/EditTextDH2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_search"
+        android:drawablePadding="3dp"
+        android:hint="search anything"
+        android:imeOptions="actionGo"
+        android:paddingRight="35dp"
+        android:singleLine="true"
+        android:paddingLeft="-10dp"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgCancelSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_action_cancel" />
+
+</FrameLayout>

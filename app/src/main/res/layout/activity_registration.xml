@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bck_with_glow"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp" >
+
+        <!-- 1 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/edFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="first name"
+                android:singleLine="true"
+            
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:id="@+id/edLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:hint="last name"
+             
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+        </LinearLayout>
+
+        <!-- 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal" >
+
+            <com.wm.customviews.CustomEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="country"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="state"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+        </LinearLayout>
+
+        <!-- 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal" >
+
+            <com.wm.customviews.CustomEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="city"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="zip"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" >
+            </com.wm.customviews.CustomEdittext>
+        </LinearLayout>
+
+        <com.wm.customviews.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="mobile"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorHint="@color/gry" />
+
+        <com.wm.customviews.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="email"
+            android:inputType="textWebEmailAddress"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorHint="@color/gry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal" >
+
+            <com.wm.customviews.CustomEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="username"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+
+            <com.wm.customviews.CustomEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="password"
+                android:inputType="numberPassword"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorHint="@color/gry" />
+        </LinearLayout>
+
+        <com.wm.customviews.CustomButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="sign up"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</ScrollView>

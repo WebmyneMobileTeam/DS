@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_buy_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <com.wm.customviews.CustomEdittext
+            android:id="@+id/buy_registration_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:hint="First Name"
+            android:singleLine="true"
+            android:inputType="text"
+              android:textSize="@dimen/my_custom_textsize"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gry" >
+        </com.wm.customviews.CustomEdittext>
+
+        <com.wm.customviews.CustomEdittext
+            android:id="@+id/buy_registration_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:hint="Last Name"
+            android:singleLine="true"
+               android:textSize="@dimen/my_custom_textsize"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gry" >
+        </com.wm.customviews.CustomEdittext>
+
+        <com.wm.customviews.CustomEdittext
+            android:id="@+id/buy_registration_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+              android:textSize="@dimen/my_custom_textsize"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gry" >
+        </com.wm.customviews.CustomEdittext>
+
+        <LinearLayout
+            android:id="@+id/buy_registration_submit_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.wm.customviews.CustomButton
+                android:id="@+id/buy_registration_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                 android:textSize="@dimen/my_custom_textsize"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

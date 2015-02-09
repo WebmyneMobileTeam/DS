@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.webmyne.daryabherbarium.ProductMain" >
+
+    <item
+        android:id="@+id/action_seepricelist"
+        android:icon="@drawable/ic_action_search"
+        android:title="See price list"/>
+    <item
+        android:id="@+id/action_callus"
+        android:icon="@drawable/ic_action_search"
+        android:menuCategory="container"
+        android:title="Call Us"/>
+    <item
+        android:id="@+id/action_emailus"
+        android:icon="@drawable/ic_action_search"
+        android:menuCategory="container"
+        android:title="Email Us"/>
+
+</menu>

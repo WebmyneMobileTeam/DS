@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearHomePArent"
+    android:padding="16dp" >
+
+    
+  
+    
+
+    <com.wm.customviews.CustomTextview
+        android:id="@+id/btn_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:drawableRight="@drawable/ic_action_next_item"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/txtPadding"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/txtPadding"
+        android:text="Products"
+        android:textSize="@dimen/my_custom_textsize"
+        android:textColor="@color/button_states"
+        android:textStyle="bold" />
+
+   <com.wm.customviews.CustomTextview
+        android:id="@+id/btn_favourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/white_bg"
+        android:drawableRight="@drawable/ic_action_next_item"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/txtPadding"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/txtPadding"
+        android:text="Favourites"
+        android:textSize="@dimen/my_custom_textsize"
+        android:textColor="@color/button_states"
+        android:textStyle="bold" />
+
+    <com.wm.customviews.CustomTextview
+        android:id="@+id/btn_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/white_bg"
+        android:drawableRight="@drawable/ic_action_next_item"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/txtPadding"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/txtPadding"
+        android:text="About Us"
+       android:textSize="@dimen/my_custom_textsize"
+        android:textColor="@color/button_states"
+        android:textStyle="bold" />
+
+    <com.wm.customviews.CustomTextview
+        android:id="@+id/btn_contactus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/white_bg"
+        android:drawableRight="@drawable/ic_action_next_item"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/txtPadding"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="@dimen/txtPadding"
+        android:text="Contact Us"
+       android:textSize="@dimen/my_custom_textsize"
+        android:textColor="@color/button_states"
+         />
+
+</LinearLayout>
