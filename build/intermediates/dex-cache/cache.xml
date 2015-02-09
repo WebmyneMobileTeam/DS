@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="D:\CURRENT_PROJECTS\Daryab-Server\app\libs\PayPalAndroidSDK.jar"
+        jar="E:\Android Development\android-sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
-        revision="21.0.2"
-        sha1="e5d822f650e1f75b4ce23610bdf4b37f8116a1d4">
-        <dex dex="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\debug\PayPalAndroidSDK-786f5921544980dfccb6791cfa0aea6226b1204c.jar" />
-    </item>
-    <item
-        jar="D:\android-sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
-        jumboMode="false"
-        revision="21.0.2"
+        revision="21.1.1"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-8450e98f08896c2d293cc2c2766f88b37866c334.jar" />
+        <dex dex="E:\Android Development\workspace\DS\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-3314c8b0c0d24bc8859736d88d2ad3e26c9c8e9e.jar" />
     </item>
     <item
-        jar="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jar="E:\Android Development\workspace\DS\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
-        revision="21.0.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\debug\classes-48d0714324a203928b26d433bea88898b1151449.jar" />
-    </item>
-    <item
-        jar="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="21.0.2"
+        revision="21.1.1"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-10a9c707c382eb2ba0ef06e480e3ea5bc03463a1.jar" />
+        <dex dex="E:\Android Development\workspace\DS\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-fc25d41a9a678f11705123d0a4a1181fac283d93.jar" />
     </item>
     <item
-        jar="D:\CURRENT_PROJECTS\Daryab-Server\app\libs\volley.jar"
+        jar="E:\Android Development\workspace\DS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
         jumboMode="false"
-        revision="21.0.2"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\debug\volley-66be7a216c0b294dac7b35411a4fb27ca46826ab.jar" />
+        revision="21.1.1"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="E:\Android Development\workspace\DS\app\build\intermediates\pre-dexed\debug\classes-868471b683aca19b1c420ce4210391e00280b5bd.jar" />
     </item>
     <item
         jar="C:\Users\Android\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
         jumboMode="false"
-        revision="21.0.2"
+        revision="21.1.1"
         sha1="a60a5e993c98c864010053cb901b7eab25306568">
-        <dex dex="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\debug\gson-2.2.4-a5ca0562976100ce3a803ee73fece992ceb392e9.jar" />
+        <dex dex="E:\Android Development\workspace\DS\app\build\intermediates\pre-dexed\debug\gson-2.2.4-a5ca0562976100ce3a803ee73fece992ceb392e9.jar" />
     </item>
     <item
-        jar="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jar="E:\Android Development\workspace\DS\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
-        revision="21.0.2"
+        revision="21.1.1"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="D:\CURRENT_PROJECTS\Daryab-Server\app\build\intermediates\pre-dexed\debug\classes-169e68184d4b3a7636064d1a34e6dcbc44c01fc8.jar" />
+        <dex dex="E:\Android Development\workspace\DS\app\build\intermediates\pre-dexed\debug\classes-8288f022e314611ba0226d9bea7d441c841021c3.jar" />
+    </item>
+    <item
+        jar="E:\Android Development\workspace\DS\app\libs\PayPalAndroidSDK.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="e5d822f650e1f75b4ce23610bdf4b37f8116a1d4">
+        <dex dex="E:\Android Development\workspace\DS\app\build\intermediates\pre-dexed\debug\PayPalAndroidSDK-86ce4a036af30bde08be4ef2667aa80fbad70b08.jar" />
+    </item>
+    <item
+        jar="E:\Android Development\workspace\DS\app\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="E:\Android Development\workspace\DS\app\build\intermediates\pre-dexed\debug\volley-381367758b05378dac08f84209b89bb6c006cb6e.jar" />
     </item>
 
 </items>

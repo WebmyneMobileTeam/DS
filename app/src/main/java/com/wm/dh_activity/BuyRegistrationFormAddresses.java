@@ -115,24 +115,26 @@ public class BuyRegistrationFormAddresses extends ActionBarActivity implements O
 
 			@Override
 			public void afterTextChanged(Editable s) {
-			    
-				if(etQuantity.getText().toString().trim().equalsIgnoreCase("")) {
-					tvTotalPrice.setText("");
-				}
-				    else {
-			
-					Log.e("product price:",productPrice+"");
-					
-					quantityOfProduct = Integer.parseInt(etQuantity.getText().toString().trim());
-					Log.e("product quantity:",Integer.toString(quantityOfProduct));
-					double finalPrice = productPrice * quantityOfProduct;
-					
-	
-					String priceToPrint = df.format(finalPrice).toString();	
-					Log.e("final price:",finalPrice+"");
-					PRICEUNIT = ""+finalPrice;
-					tvTotalPrice.setText(" "+priceToPrint.replace(".",","));
-				}
+			    try {
+                    if (etQuantity.getText().toString().trim().equalsIgnoreCase("")) {
+                        tvTotalPrice.setText("");
+                    } else {
+
+                        Log.e("product price:", productPrice + "");
+
+                        quantityOfProduct = Integer.parseInt(etQuantity.getText().toString().trim());
+                        Log.e("product quantity:", Integer.toString(quantityOfProduct));
+                        double finalPrice = productPrice * quantityOfProduct;
+
+
+                        String priceToPrint = df.format(finalPrice).toString();
+                        Log.e("final price:", finalPrice + "");
+                        PRICEUNIT = "" + finalPrice;
+                        tvTotalPrice.setText(" " + priceToPrint.replace(".", ","));
+                    }
+                } catch (Exception e){
+                    e.printStackTrace();
+                }
 		
 
 				
@@ -463,7 +465,7 @@ public class BuyRegistrationFormAddresses extends ActionBarActivity implements O
 					orderedProduct.addProperty("UnitPrice", SingleTon.getInstance().beanOrderedProdutsListForSubmitOrder.get(i).getmUnitPrice().toString());
 					jsonOrderedProductList.add(orderedProduct);
 				}
-				Log.e("orderedProdutsList.........",jsonOrderedProductList+"");
+				Log.e("orderedProd",jsonOrderedProductList+"");
 
 				// Get Current Date
 				Date cDate = new Date();
@@ -477,7 +479,7 @@ public class BuyRegistrationFormAddresses extends ActionBarActivity implements O
 				jsonOrderSubmit.add("OrderedProducts", jsonOrderedProductList);
 				jsonOrderSubmit.addProperty("OrderID", "0");
 				jsonOrderSubmit.addProperty("OrderDate", fDate+"");
-				Log.e("json object for post.........",jsonOrderSubmit+"");
+				Log.e("json object",jsonOrderSubmit+"");
 
 				reader= API.callWebservicePost(AppConstants.URL_SUBMITORDER,jsonOrderSubmit.toString());
 				Log.e("reader",reader+"");

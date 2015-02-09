@@ -102,10 +102,21 @@ public class BuyRegistration extends ActionBarActivity implements OnClickListene
 	@Override
 	public void onClick(View v) {
 
-		if(v.getId()==R.id.buy_registration_submit){
-			if(checkMandatoryFields()==true) {
-				callTaskForCustomerInfo();
-			}
+		if(v.getId()==R.id.buy_registration_submit) {
+            boolean isValid = validateEmail(etEmail.getText().toString().trim());
+            if (isValid == false) {
+
+                etEmail.requestFocus();
+                etEmail.setError("Please Enter Valid Email");
+
+            }
+            else{
+                callTaskForCustomerInfo();
+        }
+
+//			if(checkMandatoryFields()==true) {
+//
+//			}
 		}
 	}
 
