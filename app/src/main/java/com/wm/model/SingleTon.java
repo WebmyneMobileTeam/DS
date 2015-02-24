@@ -43,7 +43,7 @@ public class SingleTon {
     public Set<String> productImagesArray = new HashSet<String>();
 
     public ArrayList<BeanProduct> favProductData = new ArrayList<BeanProduct>();
-
+    
     // For Customer Information
     public List<BeanCustomerAddress> beanCustomerAddressListForCustomerInfo = new ArrayList<BeanCustomerAddress>();
     public BeanUserInfo beanUSerInfoForCustomerInfo;

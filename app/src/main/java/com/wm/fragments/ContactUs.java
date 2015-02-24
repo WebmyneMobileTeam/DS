@@ -42,6 +42,7 @@ public class ContactUs {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
+            
 			View v = inflater.inflate(R.layout.fragment_contactus, null);
 			etCompany=(CustomEdittext) v.findViewById(R.id.etCompany);
 			etFirstName=(CustomEdittext) v.findViewById(R.id.etFirstName);
@@ -58,16 +59,20 @@ public class ContactUs {
 			btnAddFile.setOnClickListener(this);
 			txtReset.setOnClickListener(this);
 			txtSend.setOnClickListener(this);
+            
+            
 			return v;
 		}
 
 		@Override
 		public void onActivityResult(int requestCode, int resultCode, Intent data) {
+            
 			if ((requestCode == FILE_CHOOSER) && (resultCode == getActivity().RESULT_OK)) {
 				fileSelected = data.getStringExtra(Constants.KEY_FILE_SELECTED);
 				Toast.makeText(getActivity(), "file selected "+fileSelected, Toast.LENGTH_SHORT).show();
 				btnAddFile.setText(new File(fileSelected).getName());
-			}                   
+			}   
+            
 		}
 
 		@Override

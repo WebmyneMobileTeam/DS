@@ -463,7 +463,7 @@ public class BuyRegistrationFormAddresses extends ActionBarActivity implements O
 					orderedProduct.addProperty("UnitPrice", SingleTon.getInstance().beanOrderedProdutsListForSubmitOrder.get(i).getmUnitPrice().toString());
 					jsonOrderedProductList.add(orderedProduct);
 				}
-				Log.e("orderedProdutsList.........",jsonOrderedProductList+"");
+				Log.e(".........",jsonOrderedProductList+"");
 
 				// Get Current Date
 				Date cDate = new Date();
@@ -477,7 +477,7 @@ public class BuyRegistrationFormAddresses extends ActionBarActivity implements O
 				jsonOrderSubmit.add("OrderedProducts", jsonOrderedProductList);
 				jsonOrderSubmit.addProperty("OrderID", "0");
 				jsonOrderSubmit.addProperty("OrderDate", fDate+"");
-				Log.e("json object for post.........",jsonOrderSubmit+"");
+				Log.e("gh",jsonOrderSubmit+"");
 
 				reader= API.callWebservicePost(AppConstants.URL_SUBMITORDER,jsonOrderSubmit.toString());
 				Log.e("reader",reader+"");

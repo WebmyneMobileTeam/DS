@@ -1,6 +1,8 @@
 package com.wm.dh_activity;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
+import java.net.URLDecoder;
 import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
@@ -59,7 +61,6 @@ public class Payment extends ActionBarActivity {
     
 	
     private Button btnPaypal;
-    
     private SingleTon singleTon = SingleTon.getInstance();
     private ImageView img;
     private TextView txtProductName;
@@ -80,14 +81,14 @@ public class Payment extends ActionBarActivity {
      * without communicating to PayPal's servers.
      */
 
-    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_PRODUCTION;
+    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_SANDBOX;
 
     // note that these credentials will differ between live & sandbox environments.
 
 
- //private static final String CONFIG_CLIENT_ID = "AZiXLBDF98Ev-I3iBtENcT1Gd11jroGWS9lrCFf3UV088mCdqhfaLibGfeui";//sandbox
+ private static final String CONFIG_CLIENT_ID = "AZiXLBDF98Ev-I3iBtENcT1Gd11jroGWS9lrCFf3UV088mCdqhfaLibGfeui";//sandbox
 
-    private static final String CONFIG_CLIENT_ID = "ATA4yRAjt6gHxbo68Dzk_oh6eHI3741dyMasSB1Y6QOcOOEblN0qVWLrmIrj";
+  //  private static final String CONFIG_CLIENT_ID = "ATA4yRAjt6gHxbo68Dzk_oh6eHI3741dyMasSB1Y6QOcOOEblN0qVWLrmIrj";
     
     private static final int REQUEST_CODE_PAYMENT = 1;
     private static final int REQUEST_CODE_FUTURE_PAYMENT = 2;
@@ -136,23 +137,19 @@ public class Payment extends ActionBarActivity {
 			txtPriceName.setText(getResources().getString(R.string.euro)+" "+priceToPrint);
 			txtProductName.setText(singleTon.selected_product_bean.getmName());
 			imgLoader.DisplayImage(AppConstants.IMAGE_LINK_PREFIX+singleTon.selected_product_bean.getmThumbnail().replace("~","").trim().toString(),img);
-			
 			String overview = "Qty "+BuyRegistrationFormAddresses.quantityOfProduct;
-			
 			double dv = Double.parseDouble(BuyRegistrationFormAddresses.PRICEUNIT);
 	   	    String p = df.format(dv).toString();	
 			
 			
 			String totalP = "Total : "+getResources().getString(R.string.euro)+" "+p;
-			
+
 			txtPaymentOverView.setText(overview+"\n"+totalP);
 			
 		    }
 		});
 		
-		
-		
-		
+
 		btnPaypal = (Button)findViewById(R.id.btnPaypal);
 		btnPaypal.setOnClickListener(new OnClickListener() {
 		    
@@ -165,7 +162,7 @@ public class Payment extends ActionBarActivity {
 			    
 			}else {
 			    
-			    //double one_product_price = Double.parseDouble(singleTon.selected_product_bean.getmUnitPrice());
+			    // double one_product_price = Double.parseDouble(singleTon.selected_product_bean.getmUnitPrice());
 			    //	int quantityOfProduct = Integer.parseInt(edEnterQUantity.getText().toString());
 			    //	double finalPrice = one_product_price * quantityOfProduct;
 			    //	PRICE = ""+finalPrice;
@@ -182,9 +179,7 @@ public class Payment extends ActionBarActivity {
 	}
 	
 	private PayPalPayment getThingToBuy(String environment) {
-		
 	        return new PayPalPayment(new BigDecimal(BuyRegistrationFormAddresses.PRICEUNIT), "EUR","payment in eur",environment);
-	   
 	    }
 		
 	    @Override
@@ -203,7 +198,7 @@ public class Payment extends ActionBarActivity {
 	                        Log.i("payment", confirm.getPayment().toJSONObject().toString(4));
 	                       
 	                        /**
-	                         *  TODO: send 'confirm' (and possibly confirm.getPayment() to your server for verification
+	                         *
 	                         * or consent completion.
 	                         * See https://developer.paypal.com/webapps/developer/docs/integration/mobile/verify-mobile-payment/
 	                         * for more details.
@@ -324,7 +319,7 @@ public class Payment extends ActionBarActivity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-
+        
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			finish();
@@ -370,7 +365,7 @@ public class Payment extends ActionBarActivity {
 				
 				JSONObject jj = new JSONObject(confirmPaymentInformation);
 			
-				
+
 				JsonObjectRequest req = new JsonObjectRequest(Request.Method.POST,AppConstants.URL_CONFIRMPAYMENT,jj, new Listener<JSONObject>() {
 
 					@Override
@@ -401,7 +396,12 @@ public class Payment extends ActionBarActivity {
 						// customer info
 						Log.e("City",SingleTon.getInstance().beanUSerInfoForConfirmPayment.getmCity()+"");
 						Log.e("CustomerID",SingleTon.getInstance().beanUSerInfoForConfirmPayment.getmCustomerID()+"");
-						Log.e("EmailID",SingleTon.getInstance().beanUSerInfoForConfirmPayment.getmEmailID()+"");
+
+                        try {
+                            Log.e("EmailID",URLDecoder.decode(SingleTon.getInstance().beanUSerInfoForConfirmPayment.getmEmailID()+"", "UTF-8"));
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
 						Log.e("FirstName",SingleTon.getInstance().beanUSerInfoForConfirmPayment.getmFirstName()+"");
 						Log.e("LastName",SingleTon.getInstance().beanUSerInfoForConfirmPayment.getmLastName()+"");
 						Log.e("PhoneNumber",SingleTon.getInstance().beanUSerInfoForConfirmPayment.getmPhoneNumber()+"");
@@ -419,19 +419,20 @@ public class Payment extends ActionBarActivity {
 							Log.e("Quantity",SingleTon.getInstance().beanOrderedProdutsListForConfirmPayment.get(i).getmQuantity()+"");
 							Log.e("TotalPrice",SingleTon.getInstance().beanOrderedProdutsListForConfirmPayment.get(i).getmTotalPrice()+"");
 							Log.e("UnitPrice",SingleTon.getInstance().beanOrderedProdutsListForConfirmPayment.get(i).getmUnitPrice()+"");
-							
 						}
 					}
 				}, new ErrorListener() {
 
 					@Override
 					public void onErrorResponse(VolleyError arg0) {
-
-						dialog.dismiss();
+                        try{
+                            dialog.dismiss();
+                        }catch(Exception e){
+                            
+                        }
 					}
 				});
-				
-				
+
 				MyApplication.getInstance().addToRequestQueue(req);
 				
 				

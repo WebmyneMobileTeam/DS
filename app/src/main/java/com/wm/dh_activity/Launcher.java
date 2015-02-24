@@ -60,13 +60,10 @@ public class Launcher extends Activity {
     			scaleDown.start();
     			
     			scaleDown.addListener(new AnimatorListener() {
-					
-				
-					
+
 					@Override
 					public void onAnimationRepeat(Animator animation) {
 
-						
 					}
 					
 					@Override
@@ -81,22 +78,19 @@ public class Launcher extends Activity {
 					@Override
 					public void onAnimationCancel(Animator animation) {
 
-						
 					}
 
 					@Override
 					public void onAnimationStart(Animator animation) {
 
-						
+
 					}
 				});
-    			
-    	
+
     	    }
     	}.start();
-    
-	}
 
+	}
 	private void processNextScreen() {
 
 
@@ -104,8 +98,6 @@ public class Launcher extends Activity {
 
 	    @Override
 	    public void onTick(long millisUntilFinished) {
-
-
 	    }
 
 	    @Override

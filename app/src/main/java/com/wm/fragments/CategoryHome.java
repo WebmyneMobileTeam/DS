@@ -58,11 +58,8 @@ public class CategoryHome extends Fragment {
     ImageView imgCategoryHomeLogo;
     public static int SELECTED_CAT = 0;
     private TextView txtNoData;
-
-
 	@Override
 	public void onAttach(Activity activity) {
-		// TODO Auto-generated method stub
 		super.onAttach(activity);
 	}
 
@@ -83,10 +80,9 @@ public class CategoryHome extends Fragment {
 		txtNoData.setVisibility(View.GONE);
 		listCategory = (ListView)v.findViewById(R.id.grid_category);
 		imgCategoryHomeLogo = (ImageView)v.findViewById(R.id.imgCategoryHome);
-		
 		return v;
 	}
-
+    
 	@Override
 	public void onResume() {
 		// TODO Auto-generated method stub
@@ -109,9 +105,7 @@ public class CategoryHome extends Fragment {
 				SELECTED_CAT = position;
 				Intent i = new Intent(getActivity(), DisplayGridProducts.class);
 				startActivity(i);
-				
-				
-				
+
 			}
 		});
 		
@@ -185,7 +179,6 @@ public class CategoryHome extends Fragment {
 				for (int i = 0; i < singleTon.productData.size(); i++) {
 
 					BeanProduct bean = singleTon.productData.get(i);
-
 					Log.i("Category", bean.getmCategory() + "");
 					Log.i("CompanyName", bean.getmCompanyName() + "");
 					Log.i("CreationDate", bean.getmCreationDate() + "");
@@ -203,8 +196,7 @@ public class CategoryHome extends Fragment {
 
 					Gson gson = new Gson();
 					String jsonStore = gson.toJson(singleTon.productData);
-					SharedPreferences spStore = getActivity()
-							.getSharedPreferences("ALL_PRODUCTS", 0);
+					SharedPreferences spStore = getActivity().getSharedPreferences("ALL_PRODUCTS", 0);
 					SharedPreferences.Editor spe = spStore.edit();
 					spe.putString("all_products_json", jsonStore);
 					spe.commit();
@@ -213,8 +205,6 @@ public class CategoryHome extends Fragment {
 				try {
 
 					// For Get
-
-				
 					displayProductsOnline();
 
 				} catch (JsonSyntaxException e) {
@@ -230,9 +220,7 @@ public class CategoryHome extends Fragment {
 					jsonRetrive();
 
 				}
-
-			
-
+                
 			}
 		});
 
@@ -369,8 +357,7 @@ public class CategoryHome extends Fragment {
     	public SampleAdapter(Context context, ArrayList<String> sampleData) {
     	    this.context = context;
     	    this.sampleData = sampleData;
-    	 
-    	 
+
     	}
 
     	public int getCount() {
