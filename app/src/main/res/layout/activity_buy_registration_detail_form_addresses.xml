@@ -203,13 +203,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" >
+                android:orientation="vertical" >
 
                 <com.wm.customviews.CustomEdittext
                     android:id="@+id/et_quantity"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.2"
+
                     android:gravity="center"
                     android:hint="Quantity"
                     android:inputType="number"
@@ -218,9 +218,9 @@
 
                 <com.wm.customviews.CustomTextview
                     android:id="@+id/total_price"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
+
                     android:gravity="center"
                     android:singleLine="true"
                     android:text=""
